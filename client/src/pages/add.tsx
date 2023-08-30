@@ -9,7 +9,7 @@ export default function AddPage() {
   const phone = useRef<string>("");
   const navigate = useNavigate();
   // @ts-ignore
-  const { isLoading, isSuccess, error, mutate } = useMutate("/emp", "POSTP");
+  const { isLoading, isSuccess, error, mutate } = useMutate("/emp", "POST");
 
   const handleAddEmp = () => {
     console.log(
